@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calendar</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+
+
+<div class="calendar__wrapper">
+    <div class="calendar">
+
+        <div class="c__header" id="current__date">
+            <div class="month">
+                <pre class="prev__month"><</pre>
+                <span id="month">May</span>
+                <pre class="next__month">></pre>
+            </div>
+
+            <div class="full__date">
+                <span id="full__date">day month, year</span>
+            </div>
+        </div>
+
+        <div class="c__body" id="month__days">
+            <div class="calendar__week__days">
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+                <div>Sun</div>
+            </div>
+            <div class="current__month__days">
+                <div>0</div>
+                <div class="today">0</div>
+                <div>0</div>
+                <div>0</div>
+                <div>0</div>
+                <div>0</div>
+                <div>0</div>
+            </div>
+        </div>
+
+        <div class="c__footer" id="current__time">
+            <div class="time">
+                <div id="hour"></div>
+                <div id="minutes"></div>
+                <div id="seconds"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script src="index.js"></script>
+</body>
+</html>

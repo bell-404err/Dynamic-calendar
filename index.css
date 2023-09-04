@@ -1,0 +1,119 @@
+.calendar {
+    width: 250px;
+    height: 375px;
+    background-color: #12121f;
+    color: #eee;
+    border-radius: 10px;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+
+.c__header {
+    width: 100%;
+    height: 80px;
+    background-color: #167e56;
+    display: flex;
+    border-radius: 10px 10px 0 0;
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
+    /*padding: 0 50px;*/
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.month {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 25px;
+    /*font-size: 35px;*/
+}
+
+.month pre {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.month #month {
+    width: 180px;
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.full__date {
+    height: 30px;
+    width: 100%;
+    padding: 0 10px;
+    font-size: 20px;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.c__body {
+    width: 100%;
+    height: 295px;
+    padding: 0 5px;
+    /*display: flex;*/
+    /*align-items: center;*/
+}
+
+.calendar__week__days {
+    width: 100%;
+    height: 30px;
+    /*padding: 10px 10px;*/
+    display: flex;
+    justify-content: space-between;
+    /*align-items: space;*/
+}
+.calendar__week__days div {
+    height: 100%;
+    width: calc(240px / 7);
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.current__month__days {
+    padding: 10px 0;
+    height: 265px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.current__month__days div {
+    font-size: 15px;
+    width: calc(240px / 7);
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.today {
+    background-color: #167e56;
+}
+
+.current__month__days div:hover:not(.today) {
+    background-color: #262626;
+    border: 1px solid #777;
+    cursor: pointer;
+}
+
+.prev__date {
+    color: #4D4D4D;
+}
+
+.deadline {
+    background-color: #cc0000;
+}
